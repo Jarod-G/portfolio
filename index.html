@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jarod Gineste - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jarod Gineste</title>
+    <link rel="icon" href="icone.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-5">
         <h1>Jarod Gineste</h1>
-        <p>Développeur Web &amp; Logiciel</p>
+        <p>Développeur Web/Mobile &amp; Logiciel</p>
     </header>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis un développeur passionné basé en France, spécialisé dans le développement web et logiciel. J'aime créer des expériences utilisateur fluides et des interfaces modernes.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Projet 1</h3>
-                <p>Un projet web cool.</p>
-                <a href="#" target="_blank">Voir sur GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Projet 2</h3>
-                <p>Un autre projet innovant.</p>
-                <a href="#" target="_blank">Voir sur GitHub</a>
-            </div>
-            <!-- Ajoutez d'autres cartes projet ici -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-primary">À propos de moi</h2>
+            <p>Je suis un développeur passionné basé en France, spécialisé dans le développement web/mobile et logiciel. J'aime créer des expériences utilisateur fluides et des interfaces modernes. Actuellement étudiant en informatique.</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>N'hésitez pas à me contacter via <a href="mailto:jarodgineste@example.com">jarodgineste@example.com</a>.</p>
+    <section id="projects" class="py-5 bg-light">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <div class="d-flex flex-row overflow-auto">
+                    <!-- Card 1 -->
+                    <div class="card mx-2" style="width: 25rem;">
+                        <img src="cartocampus.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CartOCampus</h5>
+                            <p class="card-text">Mise à jour complète de l'application CartOCampus et migration vers une version flutter.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.neocampus.cartocampus&hl=fr&pli=1" class="btn btn-primary">Google Playstore</a>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div class="card mx-2" style="width: 25rem;">
+                        <img src="fishnote.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">FishNote</h5>
+                            <p class="card-text">Une application android créer pour des pêcheurs avec flutter</p>
+                            <a href="https://github.com/Jarod-G/FishNote" class="btn btn-primary">FishNote Github</a>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div class="card mx-2" style="width: 25rem;">
+                        <img src="wikivalorant.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">WikiValorant</h5>
+                            <p class="card-text">Une fanpage créer pour le jeu Valorant. (deprecated)</p>
+                            <a href="https://jarod-g.github.io/wikivalorant/" class="btn btn-primary">WikiValorant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer class="bg-primary text-white text-center py-3">
         <p>&copy; 2024 Jarod Gineste. Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
