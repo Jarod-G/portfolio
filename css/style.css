@@ -1,0 +1,20 @@
+/* Hero personnalisé */
+.hero.is-primary {
+  background-color: #EEE6D8;
+}
+
+/* Bouton primaire personnalisé */
+.button.is-primary {
+  background-color: #e5e7e6; /* bleu pro */
+}
+
+/* Liens */
+a:hover {
+  color: #EEE6D8;
+}
+
+/* Notifications / badges */
+.is-info { background-color: #0EA5E9; color: white; }
+.is-success { background-color: #93441A; color: white; }
+.is-warning { background-color: #F59E0B; color: white; }
+.is-danger { background-color: #DC2626; color: white; }

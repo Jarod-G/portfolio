@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Kiosk application",
+    "description": "A kiosk app for Leclerc Gaillac multimédia",
+    "image": "assets/images/portfolio.png",
+    "link": "https://github.com/Jarod-G/portfolio"
+  },
+  {
+    "title": "App Mobile",
+    "description": "Projet React Native",
+    "image": "assets/images/app.png",
+    "link": "https://github.com/Jarod-G/app"
+  }
+]

@@ -1,13 +1,73 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/logo-website.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jarod Gineste</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jarod Gineste!</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/logo-website.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <section class="hero is-fullheight is-primary">
+      <div class="hero-body has-text-centered">
+        <div class="container">
+          <h1 class="title is-1">💻 Jarod Gineste ☕</h1>
+          <h2 class="subtitle is-3">🇲🇫 Hi, I’m a french  junior software developer 🇲🇫</h2>
+          <a class="button is-success is-large" href="#about-me">Learn more about me</a>
+        </div>
+      </div>
+  </section>
+
+    <section class="section" id="about-me">
+        <h1 class="title">
+          About me !
+        </h1>
+    </section>
+
+    <section class="section">
+      <div id="projects" class="columns is-multiline"></div>
+    </section>
+    
+
+    <form>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Your Name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="Your Email">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Your Message"></textarea>
+        </div>
+      </div>
+
+      <div class="control">
+        <button class="button is-primary">Send Message</button>
+      </div>
+    </form>
+
+  <script src="js/main.js"></script>
   </body>
+
+  <footer class="footer has-background-dark has-text-white has-text-centered">
+    <div class="content">
+      <p>&copy; Jarod Gineste. All rights reserved.</p>
+      <p>
+        <a href="https://github.com/Jarod-G">GitHub</a> | <a href="https://www.linkedin.com/in/jarod-gineste-dev/">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
 </html>
