@@ -12,6 +12,30 @@ html {
   border-radius: 50px;
 }
 
+/* Taille fixe pour les gifs */
+#exp-img {
+  width: 341px;   /* même largeur */
+  height: 341px;  /* même hauteur */
+  object-fit: cover; /* rogne si nécessaire mais garde la cohérence */
+  border-radius: 12px; /* arrondir un peu pour un style clean */
+}
+
+/* Labels expérience */
+#work-experience-section label {
+  display: block;
+  margin: 2rem 0; /* espace entre chaque */
+  cursor: wait;
+  transition: all 0.3s ease;
+}
+
+/* Effet brillance au hover */
+#work-experience-section label:hover {
+  filter: brightness(1.3);
+  transform: scale(1.02); /* petit zoom subtil */
+  color: #B67332; /* tu peux choisir une autre couleur accent */
+}
+
+
 
 /* Custom Hero */
 .hero.is-primary {
