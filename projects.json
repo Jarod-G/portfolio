@@ -1,8 +1,8 @@
 [
   {
     "title": "Kiosk application",
-    "description": "A kiosk app for Leclerc Gaillac multimédia with kotlin.",
-    "image": "assets/images/projects/project-logo1.png",
+    "description": "A kiosk app for Leclerc Gaillac multimédia with kotlin. The gitHub repository is private for security reasons.",
+    "image": "assets/images/projects/kiosk_app.jpg",
     "link": "https://github.com/Jarod-G/portfolio"
   },
 
@@ -17,13 +17,13 @@
     "title": "Weather simple application",
     "description": "A simple application with API calls to have weather in real time !Made with CSS, HTML, JS ",
     "image": "assets/images/projects/weather_app.png",
-    "link": "https://github.com/Jarod-G/chat2gether"
+    "link": "https://github.com/Jarod-G/WEATHER_APP"
   },
 
   {
     "title": "Chat2gether",
     "description": "A chat app, to learn how to use firebase and made a simple interface. Made with Flutter for android",
-    "image": "assets/images/projects/chat2gether.png",
+    "image": "assets/images/projects/chat2gether.jpg",
     "link": "https://github.com/Jarod-G/chat2gether"
   },
 
@@ -32,5 +32,12 @@
     "description": "FishNote is a mobile application that allows you to keep track of your fishing catches. Made with Flutter",
     "image": "assets/images/projects/project-logo2.png",
     "link": "https://github.com/Jarod-G/FishDex"
+  },
+
+  {
+    "title": "School projects",
+    "description": "Various projects available on my github page Jarod-G.",
+    "image": "assets/images/projects/logo-ups.png",
+    "link": "https://github.com/Jarod-G"
   }
 ]
