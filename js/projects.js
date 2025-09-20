@@ -10,7 +10,7 @@ fetch("projects.json")
       
       // créer la colonne (Bulma utilise "column")
       const column = document.createElement("div");
-      column.classList.add("column", "is-one-third");
+      column.classList.add("column", "is-one-quarter");
 
       // créer la card
       const card = document.createElement("div");

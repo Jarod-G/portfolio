@@ -1,3 +1,8 @@
+/*Scroll bar smooth*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hero personnalisé */
 .hero.is-primary {
   background-color: #EEE6D8;
@@ -18,3 +23,7 @@ a:hover {
 .is-success { background-color: #B67332; color: white; }
 .is-warning { background-color: #93441A; color: white; }
 .is-danger { background-color: #DC2626; color: white; }
+
+
+
+

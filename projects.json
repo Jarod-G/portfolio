@@ -7,8 +7,8 @@
   },
   {
     "title": "Mobile app chat2gether",
-    "description": "Flutter project",
-    "image": "assets/images/app.png",
+    "description": "A Flutter chat app, to learn how to use firebase and made a simple interface",
+    "image": "assets/images/projects/chat2gether.png",
     "link": "https://github.com/Jarod-G/chat2gether"
   }
 ]
