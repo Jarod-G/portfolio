@@ -5,92 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jarod Gineste!</title>
     <link rel="icon" type="image/svg+xml" href="/assets/icons/logo-website.png" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("vCogGbptimYSzvgR2"); // EMAILJS
+      })();
+    </script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
+    
+
+    <!--- SECTION HERO INTRODUCTION --->
+
     <section class="hero is-fullheight is-primary">
       <div class="hero-body has-text-centered">
         <div class="container">
           <h1 class="title is-1">💻 Jarod Gineste ☕</h1>
           <h2 class="subtitle is-3">🇲🇫 Hi, I’m a french  junior software developer 🇲🇫</h2>
-          <a class="button is-success is-large" href="#about-me">Learn more about me</a>
+          <a class="button is-success is-large" href="#aboutme-section">Learn more about me</a>
         </div>
       </div>
   </section>
 
-    <section class="section" id="about-me">
-        <h1 class="title">
-          About me !
-        </h1>
-        <div class="box">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-64x64">
-                <img src="assets/icons/logo-website.png" alt="Image" />
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Jarod Gineste</strong> <small>@jarod-gineste-dev - </small>
-                  <small><span id="today"></span></small>
-                  <br />
-                  Hi ! I’m a first-year Master’s student in Computer Science, specializing in Software Science.
-                  I aspire to become a software engineer and create a wide range of innovative applications. <br>
-                  I’m 22 years old and currently live in Toulouse. I’ve been passionate about programming ever since I played my first video game !<br><br>
-                  In my free time, I enjoy hiking in the mountains, playing video games, following esports… and drinking way too much coffee ! ☕
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-    </section>
 
-    <section class="section">
-      <div id="projects" class="columns is-multiline"></div>
-    </section>
+  <!--- SECTION ABOUT ME --->
+
+  <section class="section" id="aboutme-section">
+    <div class="content is-large">
+      <h1 class="title">
+        About me !
+      </h1>
+    </div>
+
+    <div class="box">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-128x128 ">
+            <img src="assets/icons/pp_jarod.jpg" alt="Image"/>
+          </figure>
+        </div>
+        <div class="media-content">
+          <div class="content is-large">
+            <p>
+              <strong>Jarod Gineste</strong> <small>@jarod-gineste-dev - </small>
+              <small><span id="today"></span></small>
+              <br />
+              Hi ! I’m a first-year Master’s student in Computer Science, specializing in Software Science.
+              I aspire to become a software engineer and create a wide range of innovative applications. <br>
+              I’m 22 years old and currently live in Toulouse. I’ve been passionate about programming ever since I played my first video game !<br><br>
+              In my free time, I enjoy hiking in the mountains, playing video games, following esports… and drinking way too much coffee ! ☕
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!--- SECTION PROJECTS --->
+
+  <section class="section" id="projects-section">
+    <div class="content is-large">
+      <h1 class="title">
+        Projects
+      </h1>
+    </div>
+    <div id="projects" class="columns is-multiline"></div>
+  </section>
     
 
-    <form>
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Your Name">
+  <!--- SECTION CONTACT ME (EMAILJS)--->
+
+  <section class="section" id="contact-section">
+    <div class="content is-large">
+      <h1 class="title">
+        Contact me !
+      </h1>
+      <form id="contact-form">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" name="from_name" placeholder="Your Name" required>
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="Your Email">
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" name="from_email" placeholder="Your Email" required>
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Your Message"></textarea>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+          </div>
         </div>
-      </div>
 
-      <div class="control">
-        <button class="button is-primary">Send Message</button>
-      </div>
-    </form>
+        <div class="control">
+          <button type="submit" class="button is-primary" id="submit-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
+
+  <!--- SECTION JS FILES --->
+  
+  <script src="js/contact.js"></script>
   <script src="js/projects.js"></script>
   <script src="js/date.js"></script>
+
   </body>
 
+
   <footer class="footer has-background-dark has-text-white has-text-centered">
-    <div class="content">
-      <p>&copy; Jarod Gineste. All rights reserved.</p>
-      <p>
-        <a href="https://github.com/Jarod-G">GitHub</a> | <a href="https://www.linkedin.com/in/jarod-gineste-dev/">LinkedIn</a>
-      </p>
-    </div>
+      <div class="content is-large">
+        <p>&copy; Jarod Gineste. All rights reserved.</p>
+        <p>
+          <a href="https://github.com/Jarod-G">GitHub</a> | <a href="https://www.linkedin.com/in/jarod-gineste-dev/">LinkedIn</a>
+        </p>
+      </div>
   </footer>
 
 </html>

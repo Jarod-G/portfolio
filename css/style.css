@@ -14,7 +14,7 @@ a:hover {
 }
 
 /* Notifications / badges */
-.is-info { background-color: #0EA5E9; color: white; }
-.is-success { background-color: #93441A; color: white; }
-.is-warning { background-color: #F59E0B; color: white; }
+.is-info { background-color: #DAAB3A; color: white; }
+.is-success { background-color: #B67332; color: white; }
+.is-warning { background-color: #93441A; color: white; }
 .is-danger { background-color: #DC2626; color: white; }

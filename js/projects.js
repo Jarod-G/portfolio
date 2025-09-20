@@ -19,7 +19,7 @@ fetch("projects.json")
       // image
       const cardImage = `
          <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image is-1by1">
             <img
               src="${project.image}"
               alt="${project.title}"
@@ -30,13 +30,15 @@ fetch("projects.json")
 
       // contenu
       const cardContent = `
+        <div class="content is-medium">
           <div class="card-content">
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
                   <img
-                    src="assets/icons/logo-website.png"
+                    src="assets/icons/pp_jarod.jpg"
                     alt="Jarod logo"
+                    class="is-rounded"
                   />
                 </figure>
               </div>
@@ -52,6 +54,7 @@ fetch("projects.json")
               <a href="${project.link}">More informations</a>
             </div>
           </div>
+        </div>
       `;
 
       // insérer image + contenu dans la card
