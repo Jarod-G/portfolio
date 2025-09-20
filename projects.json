@@ -5,10 +5,32 @@
     "image": "assets/images/projects/project-logo1.png",
     "link": "https://github.com/Jarod-G/portfolio"
   },
+
   {
-    "title": "Mobile app chat2gether",
-    "description": "A Flutter chat app, to learn how to use firebase and made a simple interface",
+    "title": "CartOCampus",
+    "description": "This application allows you to easily move around the Paul Sabatier campus and easily find the buildings and services available. I updated the java version of the app and migrate the app to Flutter. Technologies used : Java, Flutter, Docker, Android studio",
+    "image": "assets/images/projects/logo_cartocampus.png",
+    "link": "https://play.google.com/store/apps/details?id=com.neocampus.cartocampus&hl=fr"
+  },
+  
+  {
+    "title": "Weather simple application",
+    "description": "A simple application with API calls to have weather in real time !Made with CSS, HTML, JS ",
+    "image": "assets/images/projects/weather_app.png",
+    "link": "https://github.com/Jarod-G/chat2gether"
+  },
+
+  {
+    "title": "Chat2gether",
+    "description": "A chat app, to learn how to use firebase and made a simple interface. Made with Flutter for android",
     "image": "assets/images/projects/chat2gether.png",
     "link": "https://github.com/Jarod-G/chat2gether"
+  },
+
+  {
+    "title": "FishNote",
+    "description": "FishNote is a mobile application that allows you to keep track of your fishing catches. Made with Flutter",
+    "image": "assets/images/projects/project-logo2.png",
+    "link": "https://github.com/Jarod-G/FishDex"
   }
 ]

@@ -19,7 +19,7 @@ fetch("projects.json")
       // image
       const cardImage = `
          <div class="card-image">
-          <figure class="image is-1by1">
+          <figure class="image is-fullwidth">
             <img
               src="${project.image}"
               alt="${project.title}"
@@ -43,7 +43,7 @@ fetch("projects.json")
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4">Jarod Gineste</p>
+                <p class="title is-4">${project.title}</p>
                 <p class="subtitle is-6">@jarod-gineste-dev</p>
               </div>
             </div>
@@ -51,7 +51,10 @@ fetch("projects.json")
             <div class="content">
               ${project.description} 
               <br>
-              <a href="${project.link}">More informations</a>
+              <br>
+              <a href="${project.link}">More informations here</a>
+              ||
+              <a class="button is-size-6" href="#contact-section">Contact me ☕ </a>
             </div>
           </div>
         </div>

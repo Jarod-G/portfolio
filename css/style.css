@@ -3,20 +3,50 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hero personnalisé */
+
+.section-divider {
+  border: none;
+  height: 3px;
+  margin: 3rem 0;
+  background: linear-gradient(to right, transparent, #DAAB3A, transparent);
+  border-radius: 50px;
+}
+
+
+/* Custom Hero */
 .hero.is-primary {
   background-color: #EEE6D8;
 }
 
-/* Bouton primaire personnalisé */
+/* Custom primary button */
 .button.is-primary {
-  background-color: #e5e7e6; /* bleu pro */
+  background-color: #e5e7e6; 
 }
 
-/* Liens */
+/* Custom hover Links */
 a:hover {
   color: #EEE6D8;
 }
+
+/* Custom size cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Force card-content to take the reste of the size from card */
+.card-content {
+  flex-grow: 1;
+}
+
+/* Custom card image size */
+.card-image figure.image img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
 
 /* Notifications / badges */
 .is-info { background-color: #DAAB3A; color: white; }
