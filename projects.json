@@ -1,14 +1,14 @@
 [
   {
     "title": "Kiosk application",
-    "description": "A kiosk app for Leclerc Gaillac multimédia",
-    "image": "assets/images/portfolio.png",
+    "description": "A kiosk app for Leclerc Gaillac multimédia with kotlin.",
+    "image": "assets/images/projects/project-logo1.png",
     "link": "https://github.com/Jarod-G/portfolio"
   },
   {
-    "title": "App Mobile",
-    "description": "Projet React Native",
+    "title": "Mobile app chat2gether",
+    "description": "Flutter project",
     "image": "assets/images/app.png",
-    "link": "https://github.com/Jarod-G/app"
+    "link": "https://github.com/Jarod-G/chat2gether"
   }
 ]
