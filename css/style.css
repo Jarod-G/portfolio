@@ -1,8 +1,28 @@
-/*Scroll bar smooth*/
+/* Global */
 html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons */
+.button.is-large {
+  font-size: 1.4rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 2rem 1rem;
+}
 
 .section-divider {
   border: none;
@@ -12,72 +32,144 @@ html {
   border-radius: 50px;
 }
 
-/* Taille fixe pour les gifs */
-#exp-img {
-  width: 341px;   /* même largeur */
-  height: 341px;  /* même hauteur */
-  object-fit: cover; /* rogne si nécessaire mais garde la cohérence */
-  border-radius: 12px; /* arrondir un peu pour un style clean */
+/* Work Experience Section */
+#work-experience-section .media {
+  display: block;
 }
 
-/* Labels expérience */
+#work-experience-section .media-left {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#work-experience-section .media-content {
+  text-align: left;
+}
+
 #work-experience-section label {
   display: block;
-  margin: 2rem 0; /* espace entre chaque */
-  cursor: wait;
+  margin: 2rem 0;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* Effet brillance au hover */
 #work-experience-section label:hover {
   filter: brightness(1.3);
-  transform: scale(1.02); /* petit zoom subtil */
-  color: #B67332; /* tu peux choisir une autre couleur accent */
+  transform: scale(1.02);
+  color: #B67332;
 }
 
-
-
-/* Custom Hero */
-.hero.is-primary {
-  background-color: #EEE6D8;
+#exp-img {
+  width: 341px;
+  height: 341px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-/* Custom primary button */
-.button.is-primary {
-  background-color: #e5e7e6; 
-}
-
-/* Custom hover Links */
-a:hover {
-  color: #EEE6D8;
-}
-
-/* Custom size cards */
+/* Cards */
 .card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* Force card-content to take the reste of the size from card */
 .card-content {
   flex-grow: 1;
 }
 
-/* Custom card image size */
 .card-image figure.image img {
   object-fit: cover;
   height: 400px;
   width: 100%;
 }
 
-
-/* Notifications / badges */
+/* Theme Colors */
+.hero.is-primary { background-color: #EEE6D8; }
+.button.is-primary { background-color: #e5e7e6; }
+a:hover { color: #EEE6D8; }
 .is-info { background-color: #DAAB3A; color: white; }
 .is-success { background-color: #B67332; color: white; }
 .is-warning { background-color: #93441A; color: white; }
 .is-danger { background-color: #DC2626; color: white; }
 
+/* Footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
+.footer a:hover {
+  color: #DAAB3A;
+  transform: scale(1.1);
+}
 
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
 
+.footer .social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer .social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .button.is-large { width: 100%; }
+  .title.is-1 { font-size: 2rem; }
+  .subtitle.is-3 { font-size: 1.25rem; }
+  
+  #aboutme-section .media {
+    display: block;
+    text-align: center;
+  }
+  
+  #aboutme-section .media-left {
+    margin-bottom: 1rem;
+  }
+  
+  #aboutme-section .media-content {
+    text-align: left;
+  }
+  
+  #aboutme-section .content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  #projects .column { width: 100% !important; }
+  
+  #work-experience-section .columns { display: block !important; }
+  #work-experience-section .column { width: 100% !important; margin-bottom: 1rem; }
+  #work-experience-section .media { display: block; text-align: center; }
+  #work-experience-section .media-left { margin-bottom: 1rem; text-align: center; }
+  #work-experience-section .media-content { text-align: center; }
+  #work-experience-section label { 
+    font-size: 0.85rem !important;
+    line-height: 1.3;
+    word-break: break-word;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  #work-experience-section .box { padding: 1rem; }
+  #exp-img {
+    width: 100% !important;
+    max-width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+}
